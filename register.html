@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Iamdayy</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1024">
+            <defs>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="white" />
+                    <stop offset="90%" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad3)"
+                d="m-84.5-31.5c239-5,243.5,662,724.5,662,456,0,495.5-664,725.5-663,362.5,1.58-712.94-209.56-1450,1Z" />
+        </svg>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent"
+        style="max-width: 60%; margin-left: auto; margin-right: auto;">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./public/logo.png" alt="Logo" class="logo" />
+            </a>
+        </div>
+    </nav>
+    <div class="container" style="max-width: 80%; margin-left: auto; margin-right: auto;">
+        <h1>Register</h1>
+        <div class="card" style="margin-left: auto; margin-right: auto; width: 100%;">
+            <form id="register-form">
+                <div class="hr-with-text" style="--hr-text: 'Data Pribadi';"></div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nama_depan">Nama Depan</label>
+                        <input type="text" id="nama_depan" name="nama_depan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama_belakang">Nama Belakang</label>
+                        <input type="text" id="nama_belakang" name="nama_belakang" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="no_hp">No HP</label>
+                        <input type="tel" id="no_hp" name="no_hp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group" style="grid-column: span 2;">
+                        <label for="alamat">Alamat</label>
+                        <textarea type="text" id="alamat" name="alamat" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pekerjaan">Pekerjaan</label>
+                        <select id="pekerjaan" name="pekerjaan" required>
+                            <option value="">Pilih Pekerjaan</option>
+                            <option value="swasta">Swasta</option>
+                            <option value="pns">PNS</option>
+                            <option value="tni">TNI</option>
+                            <option value="polri">Polri</option>
+                            <option value="dokter">Dokter</option>
+                            <option value="programmer">Programmer</option>
+                            <option value="guru">Guru</option>
+                            <option value="dosen">Dosen</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="agama">Agama</label>
+                        <select id="agama" name="agama" required>
+                            <option value="">Pilih Agama</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jenisKelamin">Jenis Kelamin</label>
+                        <select id="jenisKelamin" name="jenisKelamin" required>
+                            <option value="">Pilih jenis Kelamin</option>
+                            <option value="lk">Laki Laki</option>
+                            <option value="pr">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nik">NIK / No KTP</label>
+                        <input type="number" id="nik" name="nik" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="facebook">URL Facebook</label>
+                        <input type="url" id="facebook" name="facebook">
+                    </div>
+                    <div class="form-group">
+                        <label for="instagram">URL Instagram</label>
+                        <input type="url" id="instagram" name="instagram">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">URL Website</label>
+                        <input type="url" id="website" name="website">
+                    </div>
+                    <div class="form-group">
+                        <label for="github">URL Github</label>
+                        <input type="url" id="github" name="github">
+                    </div>
+                </div>
+                <div class="hr-with-text" style="--hr-text: 'Data Orang Tua';"></div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nAyah">Nama Ayah</label>
+                        <input type="text" id="nAyah" name="nAyah" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nIbu">Nama Ibu</label>
+                        <input type="text" id="nIbu" name="nIbu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nikAyah">NIK Ayah</label>
+                        <input type="number" id="nikAyah" name="nikAyah" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nikIbu">NIK Ibu</label>
+                        <input type="number" id="nikIbu" name="nikIbu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aAyah">Alamat Ayah</label>
+                        <textarea type="text" id="aAyah" name="aAyah"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="aIbu">Alamat Ibu</label>
+                        <textarea type="text" id="aIbu" name="aIbu"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pekerjaanAyah">Pekerjaan Ayah</label>
+                        <select id="pekerjaanAyah" name="pekerjaanAyah" required>
+                            <option value="">Pilih Pekerjaan</option>
+                            <option value="swasta">Swasta</option>
+                            <option value="pns">PNS</option>
+                            <option value="tni">TNI</option>
+                            <option value="polri">Polri</option>
+                            <option value="dokter">Dokter</option>
+                            <option value="programmer">Programmer</option>
+                            <option value="guru">Guru</option>
+                            <option value="dosen">Dosen</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pekerjaanIbu">Pekerjaan Ibu</label>
+                        <select id="pekerjaanIbu" name="pekerjaanIbu" required>
+                            <option value="">Pilih Pekerjaan</option>
+                            <option value="swasta">Swasta</option>
+                            <option value="pns">PNS</option>
+                            <option value="tni">TNI</option>
+                            <option value="polri">Polri</option>
+                            <option value="dokter">Dokter</option>
+                            <option value="programmer">Programmer</option>
+                            <option value="guru">Guru</option>
+                            <option value="dosen">Dosen</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="noAyah">No. Hp Ayah</label>
+                        <input type="tel" id="noAyah" name="noAyah" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noIbu">No. Hp Ibu</label>
+                        <input type="tel" id="noIbu" name="noIbu" required>
+                    </div>
+                </div>
+                <div class="hr-with-text" style="--hr-text: 'Data Login';"></div>
+                <div class="form-grid">
+                    <div class="form-group" style="grid-column: span 2;">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="rePassword">Re-password</label>
+                        <input type="password" id="rePassword" name="rePassword">
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted w-100 bottom-0">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

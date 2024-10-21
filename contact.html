@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Iamdayy</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="background">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1024">
+            <defs>
+                <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="white" />
+                    <stop offset="90%" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#grad3)"
+                d="m-84.5-31.5c239-5,243.5,662,724.5,662,456,0,495.5-664,725.5-663,362.5,1.58-712.94-209.56-1450,1Z" />
+        </svg>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent"
+        style="max-width: 60%; margin-left: auto; margin-right: auto;">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./public/logo.png" alt="Logo" class="logo" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto ms-5 mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" aria-current="page">Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="./profile.html">Profile
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact
+                            <span class="visually-hidden">(current)</span>
+                        </a></li>
+                </ul>
+                <div style="display: flex; gap:  10px;">
+
+                    <a href="./register.html">
+                        <button class="btn btn-success">Register</button>
+                    </a>
+                    <a href="./login.html">
+                        <button class="btn btn-success">Sign in</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style=" margin-left: auto; margin-right: auto; margin-top: 100px">
+        <h1>Contact</h1>
+        <div class="card" style="max-width: 80%; margin-left: auto; margin-right: auto;">
+            <form class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted  w-100 bottom-0">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
